@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atonim root-signed online-key policy v1: producer contract",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "keys", "revoked"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "keys": {
+      "type": "object",
+      "propertyNames": {"pattern": "^sha256-[a-f0-9]{64}$"},
+      "additionalProperties": {"type": "string", "pattern": "^[A-Za-z0-9+/]{43}=$"}
+    },
+    "revoked": {"type": "array", "items": {"type": "string", "pattern": "^sha256-[a-f0-9]{64}$"}}
+  }
+}

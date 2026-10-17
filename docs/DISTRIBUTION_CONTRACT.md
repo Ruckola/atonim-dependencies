@@ -18,6 +18,10 @@ This public repository is a **catalog and release-index**, not the application s
 - Client chooses channel -> pinned component manifest -> exact artifact and checks checksum/signature, verifies compatibility, and applies an atomic install. No `latest` download endpoints.
 
 ## Manifest trust
+The proposed v2 authenticated producer contract is specified separately in
+[`TRUST_CONTRACT_V2.md`](TRUST_CONTRACT_V2.md). It does not activate either
+channel or change the current public v1 files.
+
 SHA-256 detects corruption **only if the manifest itself is trusted**. Before shipping a network-driven production installer, introduce signed manifests (and an embedded trusted verification key or equivalent pinned trust root), verified prior to trusting URLs/hashes. TLS alone and an unsigned JSON hash are not a complete supply-chain security model. Key rotation, revocation and rollback behavior require implementation/tests.
 
 ## Channels and atomic publication

@@ -1,0 +1,14 @@
+{
+  "schema_version": 2,
+  "id": "transcription.whisper.models.base",
+  "version": "1.0.0",
+  "name": "OpenAI Whisper base multilingual GGML model",
+  "description": "Unmodified OpenAI Whisper base multilingual model in whisper.cpp-compatible GGML format; MIT license notice included.",
+  "languages": [],
+  "requires": [],
+  "compatibility": {"platform": "macos", "architecture": "arm64", "min_app_version": "1.0.0", "max_app_version": "1.999.999"},
+  "artifact": {"format": "tar.gz", "url": "https://github.com/Ruckola/atonim-dependencies/releases/download/whisper-base-macos-arm64-v1.0.0/atonim-whisper-base-macos-arm64-1.0.0.tar.gz", "sha256": "b81f51a850d813faa45c54ae54c0b21c6e76f3c3b1c83b25fa17b1937f3313f9", "size_bytes": 133317540, "extracted_size_bytes": 147952528},
+  "exports": {"model": {"path": "model/ggml-base.bin", "type": "file", "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe"}},
+  "health": [],
+  "redistribution": {"cleared": true}
+}

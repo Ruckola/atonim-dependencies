@@ -1,1 +1,1 @@
-{"channel":"beta","components":{},"schema_version":2}
+{"channel":"beta","components":{"transcription.whisper.models.base":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/transcription/whisper/models/base/1.0.0.json","version":"1.0.0"}},"schema_version":2}

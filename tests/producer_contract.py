@@ -129,6 +129,8 @@ def validate(kind, raw, *, now=None):
         for check in doc['health']:
             if check['export'] not in doc['exports'] or doc['exports'][check['export']]['type'] != 'executable':
                 raise ValueError('invalid health cross-reference')
+            if 'timeout_seconds' in check:
+                _integer(check['timeout_seconds'])
             for field in ('success_exit_codes', 'empty_stderr_exit_codes'):
                 for value in check.get(field, []):
                     _integer(value)

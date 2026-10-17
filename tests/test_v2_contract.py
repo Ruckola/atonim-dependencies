@@ -76,6 +76,28 @@ class TrustContractTests(unittest.TestCase):
             with self.subTest(name=name):
                 self.assertTrue(schema(name).is_valid(data))
 
+    def test_health_timeout_producer_and_client_agree(self):
+        validator = schema('component-v2.schema.json')
+        for value in (1, 15, 75, 90):
+            component = copy.deepcopy(self.component)
+            component['health'][0]['timeout_seconds'] = value
+            with self.subTest(value=value):
+                self.assertTrue(validator.is_valid(component))
+                validate_producer('component', compact(component))
+                if SPEECHFACTORY:
+                    from services.component_catalog import ComponentCatalog
+                    ComponentCatalog(None, None).validate(component, component['id'], '1.0.0', None)
+        for value in (0, -1, 91, True, '75', 1.5, 75.0, None):
+            component = copy.deepcopy(self.component)
+            component['health'][0]['timeout_seconds'] = value
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                validate_producer('component', compact(component))
+            if SPEECHFACTORY:
+                from services.component_catalog import ComponentCatalog
+                from services.component_installation import ComponentError
+                with self.assertRaises(ComponentError):
+                    ComponentCatalog(None, None).validate(component, component['id'], '1.0.0', None)
+
     def test_channel_rejects_v1_shape_and_untrusted_url(self):
         validator = schema('channel-v2.schema.json')
         bad = copy.deepcopy(self.channel)

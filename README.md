@@ -10,6 +10,7 @@ Public distribution metadata and release index for **optional Atonim engine runt
 | --- | --- |
 | [`channels/stable.json`](channels/stable.json) | Stable component-version selection |
 | [`channels/beta.json`](channels/beta.json) | Beta component-version selection |
+| [`channels/root-policy.json`](channels/root-policy.json) | Root-signed production metadata-key policy |
 | [`schemas/`](schemas/) | JSON Schema contracts for channels and components |
 | [`components/alignment/mfa/`](components/alignment/mfa/) | MFA component family and independent runtime / language-model packs |
 | [`docs/DISTRIBUTION_CONTRACT.md`](docs/DISTRIBUTION_CONTRACT.md) | Versioning, releases, integrity, trust, compatibility and publication protocol |
@@ -31,7 +32,8 @@ The older `Ruckola/atonim-runtime-assets` repository is **legacy** and must not 
 
 The channel points to an exact component version manifest. A manifest then points to exact release assets, sizes and SHA-256 hashes. Production installation additionally requires an authenticated manifest trust design.
 
-Both channels intentionally remain empty during MFA 1.0.0 publication preparation.
+Stable remains an inactive unsigned v1 placeholder. Beta is an authenticated,
+empty v2 catalog and intentionally advertises no components.
 
 ## Immediate delivery sequence
 

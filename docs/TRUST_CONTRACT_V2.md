@@ -97,6 +97,9 @@ only after actual approval: this document does not grant approval. Empty
 digest. Required executable exports need corresponding health checks; the client
 also checks their cross-references, compatibility, archive safety and actual
 file properties. JSON Schema cannot enforce all of those runtime conditions.
+An optional per-check `timeout_seconds` is an integer from 1 through 90;
+absence retains the client's 15-second per-check default. The client enforces
+the timeout and a bounded aggregate health budget.
 
 ## Validation responsibilities
 
@@ -109,7 +112,7 @@ integers, and optional `format` checking is not a reliable date validator.
 rejects duplicate keys and non-JSON numeric constants. Every integer field
 must use an integer JSON token (for example `1`, never `1.0`, `1e0`, `"1"`,
 `true`, or `null`). This applies to every schema version, envelope sequence,
-artifact byte size and health exit code. It must additionally verify semantic
+artifact byte size, health exit code and health timeout. It must additionally verify semantic
 expiry, exact URL parsing and traversal rules, canonical Base64/length, key
 fingerprints, full-match IDs/versions/digests/roles, safe export paths, ordered
 app-version bounds and health-to-executable cross-references. The deterministic

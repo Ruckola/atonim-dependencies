@@ -41,7 +41,7 @@
     "health": {
       "type": "array", "items": {
         "type": "object", "additionalProperties": false, "required": ["export", "argv"],
-        "properties": {"export": {"type": "string"}, "argv": {"enum": [["--help"], ["--version"]]}, "success_exit_codes": {"$ref": "#/$defs/codes"}, "empty_stderr_exit_codes": {"$ref": "#/$defs/codes"}}
+        "properties": {"export": {"type": "string"}, "argv": {"enum": [["--help"], ["--version"]]}, "success_exit_codes": {"$ref": "#/$defs/codes"}, "empty_stderr_exit_codes": {"$ref": "#/$defs/codes"}, "timeout_seconds": {"type": "integer", "minimum": 1, "maximum": 90}}
       }
     },
     "redistribution": {"type": "object", "required": ["cleared"], "properties": {"cleared": {"const": true}}}

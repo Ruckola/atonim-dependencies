@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atonim detached Ed25519 signature envelope v1: producer contract",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "key_id", "role", "sequence", "expires", "payload_sha256", "signature"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "key_id": {"type": "string", "pattern": "^sha256-[a-f0-9]{64}$"},
+    "role": {"type": "string", "pattern": "^(root|channel:(stable|beta)|component:[a-z][a-z0-9]*(\\.[a-z][a-z0-9]*)+:[0-9]+\\.[0-9]+\\.[0-9]+)$"},
+    "sequence": {"type": "integer", "minimum": 0},
+    "expires": {"type": "string", "format": "date-time", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})$"},
+    "payload_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "signature": {"type": "string", "pattern": "^[A-Za-z0-9+/]{86}==$"}
+  }
+}

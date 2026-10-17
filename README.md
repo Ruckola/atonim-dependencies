@@ -13,6 +13,7 @@ Public distribution metadata and release index for **optional Atonim engine runt
 | [`schemas/`](schemas/) | JSON Schema contracts for channels and components |
 | [`components/alignment/mfa/`](components/alignment/mfa/) | MFA component family and independent runtime / language-model packs |
 | [`docs/DISTRIBUTION_CONTRACT.md`](docs/DISTRIBUTION_CONTRACT.md) | Versioning, releases, integrity, trust, compatibility and publication protocol |
+| [`docs/TRUST_CONTRACT_V2.md`](docs/TRUST_CONTRACT_V2.md) | Proposed authenticated v2 producer contract; not channel activation |
 | [`legal/`](legal/) | License policy and third-party notices |
 
 Binary packages are hosted as **immutable GitHub Release assets** only after reproducible builds, redistribution/compliance preparation and release-gate verification. Application code and integration logic remain in the private Atonim development repository, `Ruckola/SpeechFactory`.

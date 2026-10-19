@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "id": "alignment.mfa.models.es419",
+  "version": "1.0.0",
+  "name": "MFA Latin American Spanish alignment models",
+  "description": "Latin American Spanish Montreal Forced Aligner model assets for Atonim local forced alignment.",
+  "languages": [
+    "es-419"
+  ],
+  "requires": [],
+  "compatibility": {
+    "platform": "macos",
+    "architecture": "arm64",
+    "min_app_version": "1.0.0",
+    "max_app_version": "1.999.999"
+  },
+  "artifact": {
+    "format": "tar.gz",
+    "url": "https://github.com/Ruckola/atonim-dependencies/releases/download/mfa-models-es419-v1.0.0/atonim-mfa-models-es-419-1.0.0.tar.gz",
+    "sha256": "0ec1a902ab109bdc4b26365f9b39f62b4566761c0a9a76a495a9b5c3078fb0a3",
+    "size_bytes": 105002376,
+    "extracted_size_bytes": 108236244
+  },
+  "exports": {
+    "acoustic_model": {
+      "path": "models/acoustic.zip",
+      "type": "file",
+      "sha256": "287f0a6a0f0c38380e794ea92e1eb04d5d61a6c24c8cd795b832e00d7939f15f"
+    },
+    "dictionary": {
+      "path": "models/dictionary.dict",
+      "type": "file",
+      "sha256": "c7f0dd55a9feed3420767c887ccb8ce033f9e7f8abdba54cb75f0519b2d68e74"
+    },
+    "g2p_model": {
+      "path": "models/g2p.zip",
+      "type": "file",
+      "sha256": "58e0743cf364d8aa2cc8b419e7c95dd9127908268af670f305722c601f726b2a"
+    }
+  },
+  "health": [],
+  "redistribution": {
+    "cleared": true
+  }
+}

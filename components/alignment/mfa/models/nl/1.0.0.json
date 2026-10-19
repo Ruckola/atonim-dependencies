@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "id": "alignment.mfa.models.nl",
+  "version": "1.0.0",
+  "name": "MFA Dutch alignment models",
+  "description": "Dutch Montreal Forced Aligner model assets for Atonim local forced alignment.",
+  "languages": [
+    "nl"
+  ],
+  "requires": [],
+  "compatibility": {
+    "platform": "macos",
+    "architecture": "arm64",
+    "min_app_version": "1.0.0",
+    "max_app_version": "1.999.999"
+  },
+  "artifact": {
+    "format": "tar.gz",
+    "url": "https://github.com/Ruckola/atonim-dependencies/releases/download/mfa-models-nl-v1.0.0/atonim-mfa-models-nl-1.0.0.tar.gz",
+    "sha256": "f46b18a7542e4509a2e8344d0d04f72e14103881a33e923088034cff4e6a713d",
+    "size_bytes": 14772296,
+    "extracted_size_bytes": 15740929
+  },
+  "exports": {
+    "acoustic_model": {
+      "path": "models/acoustic.zip",
+      "type": "file",
+      "sha256": "7ad2db98cd0ae9787a91a7ad0adc83b08a6dd5995a4c17bd61077d620d1b09ec"
+    },
+    "dictionary": {
+      "path": "models/dictionary.dict",
+      "type": "file",
+      "sha256": "40a8230d5a9b317e17066b8574349ae1063175408d7439eaccaf40eaa7a618b6"
+    },
+    "g2p_model": {
+      "path": "models/g2p.zip",
+      "type": "file",
+      "sha256": "56e5b114eb9c9ef2ad53805e5723876c2ef15f62dd0ab22d92baada13601e77c"
+    }
+  },
+  "health": [],
+  "redistribution": {
+    "cleared": true
+  }
+}

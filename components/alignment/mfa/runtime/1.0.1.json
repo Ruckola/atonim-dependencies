@@ -30,6 +30,10 @@
       "type": "executable",
       "sha256": "375260fbb66ec358abe1c84a7d7b7fb2b3969f1a314eb50a05dce1fdb96a05b4"
     },
+    "bin": {
+      "path": "runtime/bin",
+      "type": "directory"
+    },
     "sqlite3": {
       "path": "runtime/bin/sqlite3",
       "type": "executable",

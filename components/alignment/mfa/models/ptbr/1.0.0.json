@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "id": "alignment.mfa.models.ptbr",
+  "version": "1.0.0",
+  "name": "MFA Brazilian Portuguese alignment models",
+  "description": "Brazilian Portuguese Montreal Forced Aligner model assets for Atonim local forced alignment.",
+  "languages": [
+    "pt-BR"
+  ],
+  "requires": [],
+  "compatibility": {
+    "platform": "macos",
+    "architecture": "arm64",
+    "min_app_version": "1.0.0",
+    "max_app_version": "1.999.999"
+  },
+  "artifact": {
+    "format": "tar.gz",
+    "url": "https://github.com/Ruckola/atonim-dependencies/releases/download/mfa-models-ptbr-v1.0.0/atonim-mfa-models-pt-BR-1.0.0.tar.gz",
+    "sha256": "177ae0d95ad561b92b72c5f8d676a9fa1ababc6e16623e80cd54a7721bdfbf2c",
+    "size_bytes": 95316354,
+    "extracted_size_bytes": 96500346
+  },
+  "exports": {
+    "acoustic_model": {
+      "path": "models/acoustic.zip",
+      "type": "file",
+      "sha256": "d5e5156d25f38b254add200ac3fa000e7e13c0993a32934ef28a1c1bb1a9e7ca"
+    },
+    "dictionary": {
+      "path": "models/dictionary.dict",
+      "type": "file",
+      "sha256": "8a51a8a05682da6c9f93dc29334158cdbb93be96cd9e3742065f6ae8f64ecd8c"
+    },
+    "g2p_model": {
+      "path": "models/g2p.zip",
+      "type": "file",
+      "sha256": "11e7f72ecccbae7905fa064017ac1a1fead9b6ebfdde4e23e506c28edfbcbcc8"
+    }
+  },
+  "health": [],
+  "redistribution": {
+    "cleared": true
+  }
+}

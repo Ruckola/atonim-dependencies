@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "id": "alignment.mfa.runtime",
+  "version": "1.0.1",
+  "name": "Atonim MFA runtime for macOS arm64",
+  "description": "Relocatable Montreal Forced Aligner runtime and required command-line executables for Atonim local forced alignment.",
+  "languages": [],
+  "requires": [],
+  "compatibility": {
+    "platform": "macos",
+    "architecture": "arm64",
+    "min_app_version": "1.0.0",
+    "max_app_version": "1.999.999"
+  },
+  "artifact": {
+    "format": "tar.gz",
+    "url": "https://github.com/Ruckola/atonim-dependencies/releases/download/mfa-runtime-macos-arm64-v1.0.1/atonim-mfa-runtime-macos-arm64-1.0.1.tar.gz",
+    "sha256": "d97fd8a81e7a7c8a449b5269afab37da3540e20dff02f95209527c8af5e13897",
+    "size_bytes": 146570626,
+    "extracted_size_bytes": 485346925
+  },
+  "exports": {
+    "python": {
+      "path": "runtime/bin/python",
+      "type": "executable",
+      "sha256": "6f218d40b491efebe5af8b06bb3c985ba370f9dd0d32d6fb84c2eb67e52b3baa"
+    },
+    "mfa": {
+      "path": "runtime/bin/mfa",
+      "type": "executable",
+      "sha256": "375260fbb66ec358abe1c84a7d7b7fb2b3969f1a314eb50a05dce1fdb96a05b4"
+    },
+    "bin": {
+      "path": "runtime/bin",
+      "type": "directory"
+    },
+    "sqlite3": {
+      "path": "runtime/bin/sqlite3",
+      "type": "executable",
+      "sha256": "4e272e5d2921ebd9525bf5578467f83a2d87ceeba0d70fff3e294a6b947fd9e6"
+    },
+    "fstcompile": {
+      "path": "runtime/bin/fstcompile",
+      "type": "executable",
+      "sha256": "2a0b15111b860bede7e3aff8c9723377bcd5db68b80e578720ab513fe301e923"
+    },
+    "compute-mfcc-feats": {
+      "path": "runtime/bin/compute-mfcc-feats",
+      "type": "executable",
+      "sha256": "0af81edc9d7bfa719375a3157ecf8f2fdd4cc78731907bf64d1a3033d2245141"
+    },
+    "compute-and-process-kaldi-pitch-feats": {
+      "path": "runtime/bin/compute-and-process-kaldi-pitch-feats",
+      "type": "executable",
+      "sha256": "c56f9cf231b4ce32df116f16f6ce15eb1cdb66ccff4c90710628542ac08c3f31"
+    },
+    "gmm-align-compiled": {
+      "path": "runtime/bin/gmm-align-compiled",
+      "type": "executable",
+      "sha256": "7492112b4199a368331db0b5519f405c2ee83fcf819fd11d574243d129ee57bf"
+    },
+    "gmm-est-fmllr": {
+      "path": "runtime/bin/gmm-est-fmllr",
+      "type": "executable",
+      "sha256": "33e6566257c983eace4fc53965782d582bdbec073d45dd063ead8971ed8e5ff5"
+    },
+    "gmm-est-fmllr-gpost": {
+      "path": "runtime/bin/gmm-est-fmllr-gpost",
+      "type": "executable",
+      "sha256": "97937796dd77edce6a276e7c8a48005c100131f93ce98add8ac22131d51a40cf"
+    },
+    "lattice-oracle": {
+      "path": "runtime/bin/lattice-oracle",
+      "type": "executable",
+      "sha256": "90dfa6c0921a03904539fdbd0d41c514e80d19179f18e21b11e8e5cce966a87c"
+    },
+    "gmm-latgen-faster": {
+      "path": "runtime/bin/gmm-latgen-faster",
+      "type": "executable",
+      "sha256": "f9c1e04953e556d6876671a122d4d1dde542fcd4d39988d90ae59c0c118db326"
+    },
+    "fstdeterminizestar": {
+      "path": "runtime/bin/fstdeterminizestar",
+      "type": "executable",
+      "sha256": "279f6d822c359564645019a7e2a83bbd2c0a0d8d298f4e26b3804aea876ba9cf"
+    },
+    "fsttablecompose": {
+      "path": "runtime/bin/fsttablecompose",
+      "type": "executable",
+      "sha256": "81e7996d98469fcb02849a0824388b14f2655a1d757e23d1aed007eb7dc27b6b"
+    },
+    "gmm-rescore-lattice": {
+      "path": "runtime/bin/gmm-rescore-lattice",
+      "type": "executable",
+      "sha256": "38a039809bece210e2088191933a58bc62946639a5b1de010a1e95b785c04694"
+    }
+  },
+  "health": [
+    {
+      "export": "mfa",
+      "argv": [
+        "--help"
+      ],
+      "success_exit_codes": [
+        0
+      ],
+      "timeout_seconds": 75
+    }
+  ],
+  "redistribution": {
+    "cleared": true
+  }
+}

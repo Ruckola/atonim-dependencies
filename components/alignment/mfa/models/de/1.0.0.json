@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "id": "alignment.mfa.models.de",
+  "version": "1.0.0",
+  "name": "MFA German alignment models",
+  "description": "German Montreal Forced Aligner model assets for Atonim local forced alignment.",
+  "languages": [
+    "de"
+  ],
+  "requires": [],
+  "compatibility": {
+    "platform": "macos",
+    "architecture": "arm64",
+    "min_app_version": "1.0.0",
+    "max_app_version": "1.999.999"
+  },
+  "artifact": {
+    "format": "tar.gz",
+    "url": "https://github.com/Ruckola/atonim-dependencies/releases/download/mfa-models-de-v1.0.0/atonim-mfa-models-de-1.0.0.tar.gz",
+    "sha256": "81e3e4deca83210ae6b82c406b4a321663826748404c18da0e24e83813e3de3f",
+    "size_bytes": 107983787,
+    "extracted_size_bytes": 114827408
+  },
+  "exports": {
+    "acoustic_model": {
+      "path": "models/acoustic.zip",
+      "type": "file",
+      "sha256": "9a9e0f032f0e1ff2014ed42da60f2c88efb8a9a122c3da09adc2de30e4c48322"
+    },
+    "dictionary": {
+      "path": "models/dictionary.dict",
+      "type": "file",
+      "sha256": "a73c24711fd29fa20e09ec133ff850a52a2759d1d79c362b4c20f12db2ff251c"
+    },
+    "g2p_model": {
+      "path": "models/g2p.zip",
+      "type": "file",
+      "sha256": "ab5340cb0ff19a5e383564b4adf5db301e8d8bf23218d6b0e4e37d38a8943f73"
+    }
+  },
+  "health": [],
+  "redistribution": {
+    "cleared": true
+  }
+}

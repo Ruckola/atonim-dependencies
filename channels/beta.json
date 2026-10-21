@@ -1,1 +1,14 @@
-{"channel":"beta","components":{"alignment.mfa.models.de":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/de/1.0.0.json","version":"1.0.0"},"alignment.mfa.models.en":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/en/1.0.0.json","version":"1.0.0"},"alignment.mfa.models.es419":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/es419/1.0.0.json","version":"1.0.0"},"alignment.mfa.models.fr":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/fr/1.0.0.json","version":"1.0.0"},"alignment.mfa.models.nl":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/nl/1.0.0.json","version":"1.0.0"},"alignment.mfa.models.ptbr":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/ptbr/1.0.0.json","version":"1.0.0"},"alignment.mfa.runtime":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/runtime/1.0.1.json","version":"1.0.1"},"transcription.whisper.models.base":{"manifest_url":"https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/transcription/whisper/models/base/1.0.0.json","version":"1.0.0"}},"schema_version":2}
+{
+  "schema_version": 2,
+  "channel": "beta",
+  "components": {
+    "alignment.mfa.models.de": {"version": "1.0.0", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/de/1.0.0.json"},
+    "alignment.mfa.models.en": {"version": "1.0.0", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/en/1.0.0.json"},
+    "alignment.mfa.models.es419": {"version": "1.0.0", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/es419/1.0.0.json"},
+    "alignment.mfa.models.fr": {"version": "1.0.0", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/fr/1.0.0.json"},
+    "alignment.mfa.models.nl": {"version": "1.0.0", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/nl/1.0.0.json"},
+    "alignment.mfa.models.ptbr": {"version": "1.0.0", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/models/ptbr/1.0.0.json"},
+    "alignment.mfa.runtime": {"version": "1.0.2", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/alignment/mfa/runtime/1.0.2.json"},
+    "transcription.whisper.models.base": {"version": "1.0.0", "manifest_url": "https://raw.githubusercontent.com/Ruckola/atonim-dependencies/main/components/transcription/whisper/models/base/1.0.0.json"}
+  }
+}

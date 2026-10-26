@@ -48,7 +48,9 @@ Publish one complete, verified beginner profile for a hosted TTS provider and it
 ## Current catalog
 
 - [ElevenLabs TTS v1.0.0](recipes/elevenlabs/elevenlabs-tts-v1.0.0.json) — [setup guide](guides/elevenlabs-setup.md)
-- [ElevenLabs Voice Changer v1.0.0](recipes/elevenlabs/elevenlabs-voice-changer-v1.0.0.json) — [setup guide](guides/elevenlabs-setup.md)
+- [ElevenLabs Voice Changer v1.0.1](recipes/elevenlabs/elevenlabs-voice-changer-v1.0.1.json) — [setup guide](guides/elevenlabs-setup.md)
+
+ElevenLabs Voice Changer v1.0.0 is superseded by v1.0.1, which restores paged My Voices discovery and request-scoped voice settings.
 - [Deepgram TTS v1.0.1](recipes/deepgram/deepgram-tts-v1.0.1.json) — [setup guide](guides/deepgram-setup.md)
 
 Deepgram TTS v1.0.0 is superseded by v1.0.1 because its three static voice choices cannot discover newly available Aura 2 voices.

@@ -1,6 +1,6 @@
 # Public Engine Profile recipes for Atonim
 
-**Status:** Accepted catalog-location decision, 2026-10-17. **Content status:** catalog structure defined; no profile is yet published or claimed tested.
+**Status:** Public manual-import catalog. The profiles below are structurally validated, not yet provider-render-tested on a clean Atonim build.
 
 This is the **canonical public location** for downloadable, user-owned Atonim **Engine Profile JSON recipes**. It is separate from `channels/stable.json`, `channels/beta.json` and binary runtime/model distribution.
 
@@ -45,4 +45,10 @@ A tiny JSON recipe is **not** the same as a runnable engine or downloadable AI m
 
 Publish one complete, verified beginner profile for a hosted TTS provider and its step-by-step guide, with provider permissions and costs explained, plus a matching Voice Chain onboarding procedure in the Atonim manual. The exact provider/recipe stays **unassigned** until its real configuration and rights are verified.
 
-**Current catalog:** no provider recipe or download is declared available by this document. Do not link to a hypothetical JSON file as if it exists.
+## Current catalog
+
+- [ElevenLabs TTS v1.0.0](recipes/elevenlabs/elevenlabs-tts-v1.0.0.json) — [setup guide](guides/elevenlabs-setup.md)
+- [ElevenLabs Voice Changer v1.0.0](recipes/elevenlabs/elevenlabs-voice-changer-v1.0.0.json) — [setup guide](guides/elevenlabs-setup.md)
+- [Deepgram TTS v1.0.0](recipes/deepgram/deepgram-tts-v1.0.0.json) — [setup guide](guides/deepgram-setup.md)
+
+Download a JSON file and use **Import Profile…** in Atonim. These are not automatic downloads or updates.

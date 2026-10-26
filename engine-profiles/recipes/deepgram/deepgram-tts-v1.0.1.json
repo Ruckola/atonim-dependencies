@@ -1,0 +1,12 @@
+{
+  "id": "deepgram-tts",
+  "name": "Deepgram TTS (Aura 2)",
+  "type": "tts_remote",
+  "enabled": true,
+  "connection": {"protocol": "https", "base_url_config_key": "deepgram_base_url", "default_base_url": "https://api.deepgram.com", "api_key": {"config_key": "deepgram_api_key", "env_var": "DEEPGRAM_API_KEY", "secret": true}},
+  "server": {"managed": false, "start_supported": false, "stop_supported": false, "test_supported": true},
+  "runtime": {"kind": "http_audio", "operation": "text_to_speech", "io": {"input_type": "text", "output_type": "audio"}, "method": "POST", "endpoint": "/v1/speak", "timeout_seconds": 300, "auth": {"type": "api_key_header", "header": "Authorization", "prefix": "Token ", "config_key": "deepgram_api_key"}, "request": {"type": "json", "query_mapping": {"model": "parameters.model", "encoding": "parameters.encoding"}, "parameter_mapping": {"text": "input.text"}}, "response": {"type": "audio_bytes", "format": "mp3"}},
+  "discovery": {"models": {"type": "http_json", "method": "GET", "path": "/v1/models", "item_path": "tts", "item_filter": {"architecture": "aura-2"}, "label_key": "name", "value_key": "canonical_name"}},
+  "capabilities": {"text_to_speech": true, "model_selection": true},
+  "parameters": {"model": {"label": "Voice model", "type": "select", "config_key": "deepgram_tts_model", "default": "", "options": [], "ui": "combo", "ui_group": "basic"}, "encoding": {"label": "Audio format", "type": "select", "config_key": "deepgram_tts_encoding", "default": "mp3", "options": ["mp3"], "ui": "combo", "ui_group": "advanced", "advanced": true}}
+}
